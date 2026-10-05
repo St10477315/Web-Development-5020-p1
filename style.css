@@ -1,0 +1,162 @@
+/* ==========================================
+   1. CSS RESET & BASE STYLES
+   ========================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --deep-brown: #4A3426;
+  --mocha: #7A5A44;
+  --wheat: #D4B27A;
+  --cream: #F7F4EE;
+  --soft-beige: #E8E1D4;
+  --text-dark: #2C1E16;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Playfair Display', 'Segoe UI', serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.6;
+  font-size: 1rem; /* Using relative rem units */
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--wheat);
+  margin: 2rem 0;
+}
+
+/* ==========================================
+   2. HEADER & NAVIGATION
+   ========================================== */
+header {
+  background-color: var(--deep-brown);
+  color: var(--cream);
+  padding: 2rem 5%;
+  text-align: center;
+  border-bottom: 3px solid var(--wheat);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+  background-color: var(--mocha);
+  color: var(--wheat);
+}
+
+/* ==========================================
+   3. MULTI-COLUMN LAYOUT (CSS Grid) & BREAKPOINTS
+   ========================================== */
+main {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+/* Default Desktop/Tablet: Multi-column grid layout */
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Left column wider, right column narrower */
+  gap: 2rem;
+}
+
+.full-width-section {
+  grid-column: 1 / -1;
+}
+
+section {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(74, 52, 38, 0.06);
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: var(--deep-brown);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Responsive Images using % widths */
+img.responsive-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1rem 0;
+  border: 1px solid var(--soft-beige);
+}
+
+/* ==========================================
+   4. FOOTER
+   ========================================== */
+footer {
+  background-color: var(--deep-brown);
+  color: var(--soft-beige);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+/* ==========================================
+   5. RESPONSIVE BREAKPOINTS (Mobile & Tablet)
+   ========================================== */
+@media screen and (max-width: 900px) {
+  /* Switches multi-column layout to a single-column layout on smaller screens */
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  main {
+    padding: 0 1rem;
+    margin: 1.5rem auto;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}

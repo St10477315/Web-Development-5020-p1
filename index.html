@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hadara - Luxury Modest Couture</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -25,32 +26,42 @@
     <hr>
 
     <main>
-        <!-- Hero / Overview Section -->
-        <section>
-            <h2>Welcome to Hadara</h2>
-            <p>Providing beautiful, feminine, and elegant clothing for Christian women and young girls who choose to dress modestly.</p>
+        <!-- Multi-column grid container for layout breakpoints -->
+        <div class="content-grid">
             
-            <img src="Images/hero-banner.jpg" alt="Hadara Modest Fashion Banner">
+            <!-- Hero / Overview Section (Takes up primary column) -->
+            <section>
+                <h2>Welcome to Hadara</h2>
+                <p>Providing beautiful, feminine, and elegant clothing for Christian women and young girls who choose to dress modestly.</p>
 
-            <h3>Quick Facts</h3>
-            <ul>
-                <li><strong>Founder:</strong> Hadassah Tshaka</li>
-                <li><strong>Industry:</strong> Fashion &amp; Retail</li>
-                <li><strong>Planned Launch:</strong> March 2027</li>
-                <li><strong>Location:</strong> South Africa</li>
-            </ul>
-        </section>
+                <!-- Responsive image with srcset for different screen resolutions -->
+                <img src="Images/Banner.jpeg"
+                     srcset="Images/hero-banner-400.jpg 400w, 
+                             Images/hero-banner-800.jpg 800w, 
+                             Images/hero-banner-1200.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, 1200px"
+                     alt="Hadara Modest Fashion Banner"
+                     class="responsive-img">
 
-        <hr>
+                <h3>Quick Facts</h3>
+                <ul>
+                    <li><strong>Founder:</strong> Hadassah Tshaka</li>
+                    <li><strong>Industry:</strong> Fashion &amp; Retail</li>
+                    <li><strong>Planned Launch:</strong> March 2027</li>
+                    <li><strong>Location:</strong> South Africa</li>
+                </ul>
+            </section>
 
-        <!-- Mission & Vision Brief -->
-        <section>
-            <h2>Our Purpose</h2>
-            <blockquote>
-                <p>« To create accessible, beautiful and elegant modest clothing for Christian women in South Africa, with the hope of eventually making modest fashion available to women around the world. »</p>
-            </blockquote>
-            <p><a href="about.html">Read full story &amp; mission &rarr;</a></p>
-        </section>
+            <!-- Secondary Sidebar / Purpose Section (Takes up secondary column on desktop) -->
+            <section>
+                <h2>Our Purpose</h2>
+                <blockquote>
+                    <p>« To create accessible, beautiful and elegant modest clothing for Christian women in South Africa, with the hope of eventually making modest fashion available to women around the world. »</p>
+                </blockquote>
+                <p><a href="about.html">Read full story &amp; mission &rarr;</a></p>
+            </section>
+
+        </div>
     </main>
 
     <hr>
