@@ -1,0 +1,62 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://github.com/St10477315/Web-Development-5020-p1/sitemap.xml
+```[cite: 5]
+
+#### 2. `sitemap.xml`
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://st10477315.github.io/Web-Development-5020-p1/index.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://st10477315.github.io/Web-Development-5020-p1/about.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://st10477315.github.io/Web-Development-5020-p1/products.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://st10477315.github.io/Web-Development-5020-p1/enquiry.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://st10477315.github.io/Web-Development-5020-p1/contact us.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
+```[cite: 5]
+
+---
+
+### Step 6: Update `README.md` Changelog
+Ensure your repository's `README.md` includes a detailed changelog section covering Part 2 feedback corrections and all new Part 3 additions[cite: 1, 7]:
+
+```markdown
+## Changelog
+
+### Part 3 Updates (November 2026)
+* **JavaScript Enhancements:** Implemented an interactive live product search filter on `products.html` and a lightbox image popup modal.
+* **Form Validation & Interactivity:** Added robust client-side JavaScript form validation for `enquiry.html` and `contact us.html` to verify required inputs and provide immediate user feedback.
+* **On-Page SEO Optimization:** Added unique descriptive `<title>` tags and `<meta name="description">` tags to all HTML documents, and ensured semantic header hierarchies (`h1`, `h2`, `h3`).
+* **Technical SEO Files:** Created `robots.txt` to guide search engine crawlers and `sitemap.xml` to index the site structure.
+* **Deployment:** Published the finalized website to GitHub Pages (`https://github.com/St10477315/Web-Development-5020-p1`).
+
+### Part 2 Feedback Edits
+* Refined CSS layout spacing across mobile and desktop breakpoints using CSS Grid and Flexbox.
+* Verified responsive image sizing and semantic markup across all pages.
+```[cite: 1, 7]
